@@ -1,0 +1,66 @@
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+/* Styling untuk CV Card */
+.cv-container {
+    max-width: 210mm;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling Card */
+.card {
+    border: none;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+h3 {
+    color: #007bff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Print Styling */
+@media print {
+    body {
+        background-color: white;
+    }
+    .cv-container {
+        box-shadow: none;
+        padding: 0;
+    }
+    .card {
+        border: none;
+    }
+}
+
+/* Responsif untuk Smartphone */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .name {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+}
